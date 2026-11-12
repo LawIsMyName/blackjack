@@ -29,6 +29,9 @@ public class Program {
         System.out.println(player1.getName() + ": " + player1.getHandValue() + " points");
         System.out.println(player2.getName() + ": " + player2.getHandValue() + " points");
 
+        int player1Points = player1.getHandValue();
+        int player2Points = player2.getHandValue();
+
 
     }
 }
