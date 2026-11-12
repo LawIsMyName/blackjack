@@ -19,5 +19,9 @@ public class Program {
         Deck deck = new Deck();
         deck.shuffle();
 
+        for (int i = 0; i < 2; i++) {
+            player1.addCard(deck.deal());
+            player2.addCard(deck.deal());
+        }
     }
 }
