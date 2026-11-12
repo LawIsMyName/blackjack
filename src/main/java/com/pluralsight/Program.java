@@ -28,11 +28,11 @@ public class Program {
         System.out.println("\n----- BLACKJACK -----");
 
         System.out.println("\n" + player1.getName() + "'s Hand:");
-        player1.getHand().displayHand();
+        System.out.println(player1.getHand());
         System.out.println("Total Points: " + player1.getHandValue());
 
         System.out.println("\n" + player2.getName() + "'s Hand:");
-        player2.getHand().displayHand();
+        System.out.println(player2.getHand());
         System.out.println("Total Points: " + player2.getHandValue());
 
         int player1Points = player1.getHandValue();
