@@ -16,5 +16,8 @@ public class Program {
         Player player1 = new Player(player1Name);
         Player player2 = new Player(player2Name);
 
+        Deck deck = new Deck();
+        deck.shuffle();
+
     }
 }
