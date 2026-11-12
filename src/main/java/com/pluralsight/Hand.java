@@ -41,11 +41,16 @@ public class Hand {
 
         for (Card card : cards) {
 
-            if (!card.isFaceUp()) {
+            boolean wasFaceUp = card.isFaceUp();
+
+            if (!wasFaceUp) {
                 card.flip();
             }
-
             result = result + card.toString() + "\n";
+
+            if (!wasFaceUp) {
+                card.flip();
+            }
         }
 
         return result;

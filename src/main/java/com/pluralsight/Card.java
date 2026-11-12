@@ -54,7 +54,7 @@ public class Card {
     public String toString() {
 
         if (!faceUp) {
-            return "┌─────────┐\n" +
+            return  "┌─────────┐\n" +
                     "│         │\n" +
                     "│    #    │\n" +
                     "│         │\n" +
@@ -73,7 +73,7 @@ public class Card {
             symbol = "♣";
         }
 
-        return "┌─────────┐\n" +
+         return "┌─────────┐\n" +
                 String.format("│ %-2s      │\n", value) +
                 "│         │\n" +
                 String.format("│    %s    │\n", symbol) +
