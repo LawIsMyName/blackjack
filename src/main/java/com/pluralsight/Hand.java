@@ -33,5 +33,17 @@ public class Hand {
 
         return value;
     }
+
+    public void displayHand() {
+
+        for (Card card : cards) {
+
+            if (!card.isFaceUp()) {
+                card.flip();
+            }
+
+            System.out.println(card.getValue() + " of " + card.getSuit());
+        }
+    }
 }
 
