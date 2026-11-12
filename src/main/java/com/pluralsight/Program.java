@@ -13,5 +13,8 @@ public class Program {
         System.out.print("Enter Player 2 name: ");
         String player2Name = scanner.nextLine();
 
+        Player player1 = new Player(player1Name);
+        Player player2 = new Player(player2Name);
+
     }
 }
