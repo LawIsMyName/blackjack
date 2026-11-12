@@ -1,4 +1,5 @@
 package com.pluralsight;
+
 import java.util.Scanner;
 
 public class Program {
@@ -32,6 +33,25 @@ public class Program {
         int player1Points = player1.getHandValue();
         int player2Points = player2.getHandValue();
 
+        System.out.println("\n---- RESULTS ----");
 
+        if (player1Points > 21 && player2Points > 21) {
+            System.out.println("Both players busted!");
+
+        } else if (player1Points > 21) {
+            System.out.println(player2.getName() + " wins!");
+
+        } else if (player2Points > 21) {
+            System.out.println(player1.getName() + " wins!");
+
+        } else if (player1Points > player2Points) {
+            System.out.println(player1.getName() + " wins!");
+
+        } else if (player2Points > player1Points) {
+            System.out.println(player2.getName() + " wins!");
+
+        } else {
+            System.out.println("It's a tie!");
+        }
     }
 }
