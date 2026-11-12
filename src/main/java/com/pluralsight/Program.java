@@ -23,5 +23,12 @@ public class Program {
             player1.addCard(deck.deal());
             player2.addCard(deck.deal());
         }
+
+        System.out.println("\n----- BLACKJACK -----");
+
+        System.out.println(player1.getName() + ": " + player1.getHandValue() + " points");
+        System.out.println(player2.getName() + ": " + player2.getHandValue() + " points");
+
+
     }
 }
