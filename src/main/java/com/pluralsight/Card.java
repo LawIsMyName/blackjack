@@ -33,9 +33,13 @@ public class Card {
     }
 
     public int getPointValue() {
-        // TODO: this is your job (Blackjack, p. 95).
-        // Until you finish it, every card is worth 0.
-        return 0;
+        if (value.equals("A")) {
+            return 11;
+        } else if (value.equals("K") || value.equals("Q") || value.equals("J")) {
+            return 10;
+        } else {
+            return Integer.parseInt(value);
+        }
     }
 
     public boolean isFaceUp() {
