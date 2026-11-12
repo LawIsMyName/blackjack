@@ -34,7 +34,10 @@ public class Hand {
         return value;
     }
 
-    public void displayHand() {
+    @Override
+    public String toString() {
+
+        String result = "";
 
         for (Card card : cards) {
 
@@ -42,8 +45,10 @@ public class Hand {
                 card.flip();
             }
 
-            System.out.println(card.getValue() + " of " + card.getSuit());
+            result = result + card.toString() + "\n";
         }
+
+        return result;
     }
 }
 

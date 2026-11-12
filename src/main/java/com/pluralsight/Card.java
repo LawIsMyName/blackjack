@@ -49,5 +49,37 @@ public class Card {
     public void flip() {
         faceUp = !faceUp;
     }
+
+    @Override
+    public String toString() {
+
+        if (!faceUp) {
+            return "┌─────────┐\n" +
+                    "│         │\n" +
+                    "│    #    │\n" +
+                    "│         │\n" +
+                    "└─────────┘";
+        }
+
+        String symbol = "";
+
+        if (suit.equals("Hearts")) {
+            symbol = "♥";
+        } else if (suit.equals("Diamonds")) {
+            symbol = "♦";
+        } else if (suit.equals("Spades")) {
+            symbol = "♠";
+        } else if (suit.equals("Clubs")) {
+            symbol = "♣";
+        }
+
+        return "┌─────────┐\n" +
+                String.format("│ %-2s      │\n", value) +
+                "│         │\n" +
+                String.format("│    %s    │\n", symbol) +
+                "│         │\n" +
+                String.format("│      %2s │\n", value) +
+                "└─────────┘";
+    }
 }
 
